@@ -1,64 +1,79 @@
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 16px;
-    color:#111238;
+    color: #111238;
     margin: 0;
 }
-header{
+
+header {
     background: #F2F3F6;
 }
-.menu{
+
+.menu {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.menu-item:not(:last-child){
+
+.menu-item:not(:last-child) {
     margin-right: 20px;
 }
-.button{
+
+.button {
     text-decoration: none;
     display: inline-block;
-    border:none;
+    border: none;
     font-size: 16px;
 }
-.menu-link{
+
+.menu-link {
     color: #111238;
 }
-.button-link{
+
+.button-link {
     color: #111238;
     padding: 10px;
     margin-right: 30px;
 }
-.button-primary{
+
+.button-primary {
     background: #1A75E8;
     border-radius: 5px;
     padding: 15px 30px;
     color: #fff;
 }
-.button-icon{
+
+.button-icon {
     vertical-align: middle;
     margin-right: 10px;
 }
-.button-text{
+
+.button-text {
     vertical-align: middle;
 }
-.hero-title{
+
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 53px;
     margin-bottom: 15px;
     margin-top: 43px;
 }
-.hero-text{
+
+.hero-text {
     font-weight: normal;
     font-size: 18px;
     line-height: 140%;
     margin-bottom: 30px;
 }
-.input-group{
+
+.input-group {
     background: #FFFFFF;
     border: 1px solid rgba(209, 209, 209, 0.1);
     box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
@@ -66,56 +81,176 @@ header{
     padding: 10px;
     margin-bottom: 25px;
 }
-.input{
+
+.input {
     background-color: #fff;
-    border:none;
+    border: none;
     flex-grow: 1;
     font-size: 16px;
-    line-height: 19px; 
+    line-height: 19px;
     padding-left: 15px;
 }
-input:focus{
+
+input:focus {
     outline-color: red;
 }
-.tags-group{
+
+.tags-group {
     padding-left: 15px;
-    color:#B2B2B2;
+    color: #B2B2B2;
     font-size: 14px;
     line-height: 17px;
 }
-.tag{
-    color:#B2B2B2;
+
+.tag {
+    color: #B2B2B2;
     text-decoration: none;
     padding: 5px 10px;
     margin-left: 10px;
     border: 1px solid #B2B2B2;
     border-radius: 5px;
 }
-.section{
+
+.section {
     padding-top: 80px;
     padding-bottom: 80px;
 }
-.section-title{
+
+.section-title {
     margin-bottom: 40px;
     margin-top: 0;
 }
-.card{
+
+.card {
     text-decoration: none;
-    color:#111238;
+    color: #111238;
     background: #F2F3F6;
     border-radius: 10px;
-    padding: 35px; 
-    transition: background 0.2s, color 0.2s;  
+    padding: 35px;
+    transition: background 0.2s, color 0.2s;
 }
-.card:hover{
+
+.card:hover {
     background: #1A75E8;
     color: #fff;
 }
-.card:hover .card-icon{
+
+.card:hover .card-icon {
     fill: #fff;
 }
-.card-icon{
+
+.card-icon {
     fill: #111238;
     margin-bottom: 15px;
     transition: fill 0.2s;
+}
+
+.offer {
+    border: 1px solid #C5C9D5;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.offer-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #F2F3F6;
+    background: #fff url('../image/logo-company.png') no-repeat center / contain;
+}
+
+.offer-title {
+    margin-left: 20px;
+}
+
+.offer-heading {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.offer-place {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.offer-salary {
+    margin-left: 46px;
+    margin-right: 62px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    background: #1A75E8;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+
+.more {
+    font-size: 14px;
+    line-height: 17px;
+    color: #1A75E8;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.subscribe {
+    background: #F2F3F6;
+}
+
+.subscribe-title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 20px;
+}
+
+.subscribe-subtitle {
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+.subscribe-form {
+    max-width: 460px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.footer-description,
+.footer-copyright {
+    font-size: 12px;
+    line-height: 140%;
+    color: #B2B2B2;
+}
+
+.footer-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #111238;
+}
+
+.footer-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-list-link {
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #111238;
+    margin-bottom: 10px;
 }
